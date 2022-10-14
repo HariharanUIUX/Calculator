@@ -1,0 +1,111 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>Simple Calculator</title>
+		<script type=text/javascript src="script.js"></script>
+		<style>
+			table{
+	background-color:gray;
+	border:2px solid black;
+	border-radius:10px;
+		}
+input[type=button]{
+	background-color:lightgray;
+	border:none;
+	color:white;
+	padding:10px 15px;
+	text-decoration:none;
+	font-size:20px;
+	cursor:pointer;
+	border-radius:9px;
+	align:justify;
+		}
+input[type=button]:hover{
+	color:black;
+	border:2px solid black;
+	
+		}
+input[type=submit]{
+	background-color:orange;
+	border:none;
+	color:white;
+	padding:10px 15px;
+	text-decoration:none;
+	font-size:20px;
+	cursor:pointer;
+	border-radius:9px;
+	align:justify;
+		}
+input[type=submit]:hover{
+	color:black;
+	border:2px solid black;
+	
+		}
+input[type=text]{
+	width:100%;
+	padding:18px 15px;
+	font-size:20px;
+	text-transfor:bold;
+	margin:8px 0;
+	border:2px solid black;
+	border-radius:8px;
+	text-align:right;
+	background-color:rgba(215,215,215,0.6);
+		}
+		</style>
+	</head>
+	<body>
+			<center><h2>Simple Calculator</h2></center>
+	
+	<form name=frm><table align="center" width="260" cellpadding="5" cellspacing="5" height="400">
+
+		<tr>
+			<td align="center"><input type="text" id="dis" name="val" ></td>
+		</tr>
+
+		<tr>
+			<td align="center"><input type="button" value="1" onclick="frm.val.value+='1'"></button>
+
+			<input type="button" value="2" onclick="frm.val.value+='2'"></button>
+
+			<input type="button" value="3" onclick="frm.val.value+='3'"></button>
+
+			<input type="button" value="/" onclick="frm.val.value+='/'"></button></td><tr>
+
+		<tr>	<td align="center"><input type="button" value="4" onclick="frm.val.value+='4'"></button>
+
+			<input type="button" value="5" onclick="frm.val.value+='5'"></button>	
+
+			<input type="button" value="6" onclick="frm.val.value+='6'"></button>
+
+			<input type="button" value="*" onclick="frm.val.value+='*'"></button></td></tr>
+
+		<tr>	<td align="center"><input type="button" value="7" onclick="frm.val.value+='7'"></button>
+
+			<input type="button" value="8" onclick="frm.val.value+='8'"></button>
+
+			<input type="button" value="9" onclick="frm.val.value+='9'"></button>
+
+			<input type="button" value="-" onclick="frm.val.value+='-'"></button></td></tr>
+
+		<tr>	<td align="center"><input type="button" value="0" onclick="frm.val.value+='0'"></button>
+
+			
+
+			<input type="button" value="=" onclick="calculate()">  </button>
+
+
+			<input type="button" id="clear" value="clear" onclick="frm.val.value=''"> </button>
+
+			<input type="button"  value="+" onclick="frm.val.value+='+'"></button></td></tr>
+
+		
+	</table></form>
+
+
+
+
+
+
+	</body>
+</html>
